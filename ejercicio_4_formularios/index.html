@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo/estilos.css">
+</head>
+
+<body>
+    <div class="acceso">
+        <h1>INFORMACION DE ACCESO A <br>LOS CLICLOS FORMATIVOS DE GRADO SUPERIOR</h1>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Datos Personales</legend> 
+            <label for="nombre" >Nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" name="apellidos" id="apellidos">
+            <label for="dni">DNI:</label>
+            <input type="text" name="dni" id="dni">
+            <label for="nacimiento">Lugar de nacimiento:</label>
+            <input type="text" name="nacimiento" id="nacimiento">
+            <label for="Provincia">Provincia:</label>
+            <select name="Provincia" id="Provincia">
+                <option value="Cáceres">Cáceres</option>
+                <option value="Madrid">Madrid</option>
+                <option value="Barcelona">Barcelona</option>
+                <option value="Sevilla">Sevilla</option>
+                <option value="Badajoz">Badajoz</option>
+            </select>
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+            <input type="date" name="fecha_nacimiento" id="fecha_nacimiento">
+            <label for="direccion">Dirección</label>
+            <input type="text" name="direccion" id="direccion">
+            <label for="codigo_postal">Codigo postal</label>
+            <input type="text" name="codigo_postal" id="codigo_postal">
+        </fieldset>
+   
+        <fieldset>
+           <legend>Forma de acceso</legend> 
+        <label><input type="radio" name="acceso" id="acceso" value="directo" required> Directo
+        </label>
+        <label for="bachillerato">Bachillerato</label>
+        <input type="radio" name="acceso" id="bachillerato">
+        <input type="text" name="bachillerato" id="bachillerato">
+        <label for="universidad">Universidad</label>
+        <input type="radio" name="acceso" id="universidad">
+        <label for="grado_medio">Grado medio</label>
+        <input type="text" name="grado_medio" id="grado_medio">
+        <input type="radio" name="acceso" id="grado_medio">
+        <label for="otros">Otros (especifique)</label>
+        <input type="radio" name="acceso" id="otros">
+        <input type="text" name="otros" id="otros">
+    </fieldset>
+        <fieldset>
+            <legend>Documentos Adjuntados</legend>
+        <label for="fotocopia_dni">Fotocopia DNI</label>
+        <input type="checkbox" name="fotocopia_dni" id="fotocopia_dni">
+        <label for="certificado_academico">Certificado Académico</label>
+        <input type="checkbox" name="certificado_academico" id="certificado_academico">
+        <label for="otros_documentos">Otros documentos (especifique)</label>
+        <input type="checkbox" name="otros_documentos" id="otros_documentos">
+        <input type="text" name="otros_documentos" id="otros_documentos">
+    </fieldset>
+    </div>
+    <button type="submit" class="enviar">Enviar solicitud</button>
+</form>
+</body>
+
+</html>
