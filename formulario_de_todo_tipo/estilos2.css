@@ -1,0 +1,14 @@
+.usuario {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form {
+    width: 250px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px;
+   
+   
+}
