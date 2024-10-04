@@ -1,13 +1,135 @@
+/* Estilo general del formulario */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
 }
 
-.acceso {
+h1 {
     text-align: center;
-    margin: auto;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+form {
+    width: 70%;
+    margin: 0 auto;
     background-color: #fff;
     padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de las secciones */
+fieldset {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+legend {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 2px 5px;
+}
+
+/* Sección de Datos Personales */
+#personal-info {
+    background-color: #7d6888;
+    color: rgb(3, 2, 2);
+    border-radius: 8px;
+}
+
+#personal-info label {
+    display: inline-block;
+    width: 120px;
+    font-size: 14px;
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+#personal-info input,
+#personal-info select {
+    width: calc(30% - 10px);
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+#personal-info input[type="date"] {
+    width: calc(30% - 15px);
+}
+
+/* Sección de Forma de Acceso */
+#access-info {
+    background-color: #69849a;
+    color: black;
+    border-radius: 8px;
+}
+
+#access-info label {
+    display: inline-block;
+    width: 150px;
+    font-size: 14px;
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+#access-info input[type="text"] {
+    width: calc(40% - 10px);
+}
+
+#access-info input[type="radio"] {
+    margin-right: 5px;
+}
+
+
+#documents-info {
+    background-color: #597b64;
+    color: black;
+    border-radius: 8px;
+}
+
+#documents-info label {
+    display: inline-block;
+    width: 150px;
+    font-size: 14px;
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+#documents-info input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#documents-info input[type="text"] {
+    width: calc(40% - 10px);
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
 }
