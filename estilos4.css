@@ -1,0 +1,22 @@
+body {
+
+
+    font-weight: bold;
+
+}
+form {
+     width: auto;
+     height: auto;
+     margin: 0 auto;
+     background-color: #fff;
+     padding: 10px;
+    border: none;
+    
+}
+
+
+fieldset {
+ 
+    border: none;
+    
+}
