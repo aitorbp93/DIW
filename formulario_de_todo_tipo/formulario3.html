@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos3.css" />
+  </head>
+  <body>
+    <form action="procesar.php" method="get">
+      <fieldset id="access">
+        <label class="Articulo" for="Articulo">Articulo</label>
+        <input
+          class="usuario"
+          type="text"
+          name="Articulo"
+          placeholder="Articulo"
+        />
+        <p>Forma de entrega:</p>
+       <p><label for="domicilio">Envio domicilio</label>
+        <input type="radio" name="domicilio" class="domicilio" /></p>
+        <label for="recogida">Recogida en tienda</label>
+        <input type="radio" name="recogida" class="recogida" />
+        <input type="submit" value="Enviar" />
+ 
+    </fieldset>
+
+    </form>
+  </body>
+</html>
