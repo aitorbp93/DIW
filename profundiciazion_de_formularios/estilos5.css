@@ -6,7 +6,7 @@ body {
 }
 
 .form-container {
-    max-width: 600px;
+    max-width: 500px;
     margin: 30px auto;
     padding: 20px;
     background: white;
@@ -29,32 +29,13 @@ label {
 }
 
 input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="number"],
+input[type="file"],
 select {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-bottom: 15px;
-}
-
-fieldset {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 4px;
-}
-
-legend {
-    font-weight: bold;
-    color: #333;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-    margin-right: 5px;
 }
 
 button {
