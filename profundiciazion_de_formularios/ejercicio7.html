@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el Color</title>
+    <link rel="stylesheet" href="estilos7.css">
+    <script>
+        // Genera un color aleatorio entre 0 y 5
+        function getRandomColorIndex() {
+            return Math.floor(Math.random() * 6); // Valores entre 0 y 5
+        }
+
+        // Colores posibles
+        const colores = ["azul", "verde", "rojo", "naranja", "rosa", "marrón"];
+
+        // Al cargar la página, seleccionamos un color aleatorio
+        let colorPensado = colores[getRandomColorIndex()];
+
+        function verificarColor(event) {
+            event.preventDefault(); // Evitar el envío del formulario
+            const colorSeleccionado = document.getElementById("color").value;
+
+            if (colorSeleccionado === colorPensado) {
+                // Si el color es correcto, se envía el formulario
+                document.getElementById("adivinaForm").submit();
+            } else {
+                // Si el color es incorrecto, muestra un mensaje
+                alert("¡Incorrecto! Intenta de nuevo.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Adivina el Color</h1>
+        <form id="adivinaForm" action="procesar.php" method="get" onsubmit="verificarColor(event)">
+            <label for="color">Selecciona un color:</label>
+            <select id="color" name="color" required>
+                <option value="">Elige un color</option>
+                <option value="azul">Azul</option>
+                <option value="verde">Verde</option>
+                <option value="rojo">Rojo</option>
+                <option value="naranja">Naranja</option>
+                <option value="rosa">Rosa</option>
+                <option value="marrón">Marrón</option>
+            </select>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

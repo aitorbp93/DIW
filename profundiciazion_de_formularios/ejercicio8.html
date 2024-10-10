@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IVA</title>
+    <link rel="stylesheet" href="estilos8.css">
+    <script>
+        function calcularPrecioTotal() {
+            const precioInput = document.getElementById("precioInput").value;
+            const tipoIVA = document.querySelector('input[name="ivaTipo"]:checked').value;
+
+            let tasaIVA = tipoIVA === "normal" ? 0.21 : 0.10;
+            const precioConIVA = (parseFloat(precioInput) * (1 + tasaIVA)).toFixed(2);
+
+            document.getElementById("resultadoCampo").value = precioConIVA;
+        }
+    </script>
+</head>
+<body>
+    <div class="calculator-container">
+        <h2>Calculadora de IVA</h2>
+        <form id="ivaForm">
+            <label for="precioInput">Introduce el Precio:</label>
+            <input type="number" id="precioInput" step="0.01" required placeholder="Precio en euros" />
+
+            <fieldset>
+                <legend>Selecciona el Tipo de IVA:</legend>
+                <label>
+                    <input type="radio" name="ivaTipo" value="normal" checked>
+                    IVA Normal (21%)
+                </label>
+                <label>
+                    <input type="radio" name="ivaTipo" value="reducido">
+                    IVA Reducido (10%)
+                </label>
+            </fieldset>
+
+            <label for="resultadoCampo">Total con IVA:</label>
+            <input type="text" id="resultadoCampo" readonly placeholder="Resultado" />
+
+            <button type="button" onclick="calcularPrecioTotal()">Calcular</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pago</title>
+    <link rel="stylesheet" href="estilos9.css">
+    <script>
+        function validarFormulario(event) {
+            const numeroTarjeta = document.getElementById("numero_tarjeta").value;
+            const nombreTitular = document.getElementById("nombre_titular").value;
+            const mesCaducidad = document.getElementById("mes_caducidad").value;
+            const anioCaducidad = document.getElementById("anio_caducidad").value;
+            const codigoCVV = document.getElementById("codigo_cvv").value;
+
+            // Validar número de tarjeta
+            if (!/^\d{16}$/.test(numeroTarjeta)) {
+                alert("El número de tarjeta debe tener 16 dígitos sin espacios.");
+                event.preventDefault();
+                return false;
+            }
+
+            // Validar nombre del titular
+            if (!nombreTitular) {
+                alert("El nombre del titular es obligatorio.");
+                event.preventDefault();
+                return false;
+            }
+
+            // Validar mes y año de caducidad
+            if (mesCaducidad === "" || anioCaducidad === "") {
+                alert("Debes seleccionar el mes y el año de caducidad.");
+                event.preventDefault();
+                return false;
+            }
+
+            // Validar CVV
+            if (!/^\d{3}$/.test(codigoCVV)) {
+                alert("El código de seguridad (CVV) debe tener 3 dígitos.");
+                event.preventDefault();
+                return false;
+            }
+
+            // Si todo es correcto, se puede enviar el formulario
+            alert("Pago realizado con éxito."); // Mensaje de éxito
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Formulario de Pago</h1>
+        <form action="procesar.php" method="post" onsubmit="return validarFormulario(event);">
+            <label for="numero_tarjeta">Número de Tarjeta (16 dígitos):</label>
+            <input type="text" id="numero_tarjeta" name="numero_tarjeta" required placeholder="Ejemplo: 1234567812345678" />
+
+            <label for="nombre_titular">Nombre del Titular:</label>
+            <input type="text" id="nombre_titular" name="nombre_titular" required placeholder="Nombre del titular" />
+
+            <label for="mes_caducidad">Mes de Caducidad:</label>
+            <select id="mes_caducidad" name="mes_caducidad" required>
+                <option value="">Selecciona un mes</option>
+                <script>
+                    for (let mes = 1; mes <= 12; mes++) {
+                        document.write(`<option value="${mes < 10 ? '0' : ''}${mes}">${mes < 10 ? '0' : ''}${mes}</option>`);
+                    }
+                </script>
+            </select>
+
+            <label for="anio_caducidad">Año de Caducidad:</label>
+            <select id="anio_caducidad" name="anio_caducidad" required>
+                <option value="">Selecciona un año</option>
+                <script>
+                    for (let anio = 2024; anio <= 2028; anio++) {
+                        document.write(`<option value="${anio}">${anio}</option>`);
+                    }
+                </script>
+            </select>
+
+            <label for="codigo_cvv">Código de Seguridad (CVV):</label>
+            <input type="password" id="codigo_cvv" name="codigo_cvv" required placeholder="CVV" />
+
+            <label for="notas">Notas (opcional):</label>
+            <textarea id="notas" name="notas" rows="2" cols="60" placeholder="Notas opcionales..."></textarea>
+
+            <label>
+                <input type="checkbox" name="guardar_datos">
+                Guardar datos para otras compras
+            </label>
+
+            <button type="submit">Pagar</button>
+            <button type="button" onclick="window.location.href='index.html';">Cancelar</button>
+        </form>
+    </div>
+</body>
+</html>

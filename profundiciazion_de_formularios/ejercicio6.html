@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensaje al Profesor</title>
+    <link rel="stylesheet" href="estilos6.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Mensaje al Profesor</h1>
+        <form id="mensaje" action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" />
+
+            <label for="turno">Turno:</label>
+            <select id="turno" name="turno" required>
+                <option value="manana">Mañana</option>
+                <option value="tarde">Tarde</option>
+            </select>
+
+            <label for="materias">Materias:</label>
+            <select id="materias" name="materias" required>
+                <option value="fisica">Física</option>
+                <option value="quimica">Química</option>
+                <option value="biologia">Biología</option>
+                <option value="matematicas">Matemáticas</option>
+            </select>
+
+            <label for="mensaje_texto">Mensaje:</label>
+            <textarea id="mensaje_texto" name="mensaje_texto" rows="4" cols="30" maxlength="120" required placeholder="Escribe tu mensaje aquí..."></textarea>
+
+            <input type="hidden" name="origen" value="Academia" />
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
