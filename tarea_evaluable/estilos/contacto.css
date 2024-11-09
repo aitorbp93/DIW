@@ -1,4 +1,4 @@
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ body {
     color: #333;
 }
 
-/* Barra de navegación */
+
 header {
     background-color: #4a4e69;
     padding: 15px;
@@ -30,7 +30,6 @@ header nav a:hover {
     color: #b3c5cc;
 }
 
-/* Hero de Contacto */
 .contact-hero {
     background: linear-gradient(to bottom, #4a4e69, #b3c5cc);
     color: #f0e9e2;
@@ -47,7 +46,7 @@ header nav a:hover {
     font-size: 1.2em;
 }
 
-/* Sección de Formulario */
+
 .contact-form-section {
     padding: 40px 20px;
     max-width: 600px;
@@ -94,7 +93,7 @@ header nav a:hover {
     min-height: 100px;
 }
 
-/* Botón de Enviar */
+
 .submit-btn {
     background-color: #4a4e69;
     color: #f0e9e2;
@@ -112,13 +111,13 @@ header nav a:hover {
     transform: scale(1.05);
 }
 
-/* Estilos de Pseudoclases */
+
 .contact-form input:valid, .contact-form textarea:valid {
-    border-color: #4caf50; /* Verde para campos válidos */
+    border-color: #4caf50; 
 }
 
 .contact-form input:invalid, .contact-form textarea:invalid {
-    border-color: #e63946; /* Rojo para campos inválidos */
+    border-color: #e63946; 
 }
 
 /* Footer */

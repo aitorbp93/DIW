@@ -1,4 +1,4 @@
-/* Estilos básicos */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -36,7 +36,7 @@ header .cart-icon {
     font-size: 0.8em;
 }
 
-/* Estilos para la galería de productos */
+
 .product-gallery {
     padding: 20px;
     text-align: center;
@@ -95,7 +95,7 @@ header .cart-icon {
     background-color: #333;
 }
 
-/* Estilos para el Carrito */
+
 .shopping-cart {
     padding: 20px;
     background-color: #f7f7f7;
@@ -162,7 +162,7 @@ footer {
     color: #b3c5cc;
 }
 
-/* Estilo para los Íconos de Redes Sociales */
+
 .sociales {
     display: flex;
     justify-content: center;

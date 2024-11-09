@@ -1,4 +1,4 @@
-/* Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ body {
     background-color: #fdfaf6;
 }
 
-/* Header */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -21,12 +21,12 @@ header {
     color: #f0e9e2;
 }
 
-.header-logo {
+.logo {
     display: flex;
     align-items: center;
 }
 
-.header-logo img {
+.logo img {
     width: 50px;
     margin-right: 10px;
 }
@@ -44,7 +44,7 @@ header nav ul li a {
     transition: color 0.3s;
 }
 
-.header-buttons button {
+.boton-cabecera button {
     padding: 8px 12px;
     margin-left: 10px;
     border: none;
@@ -60,7 +60,7 @@ header nav ul li a {
     background-color: #333;
 }
 
-/* Hero Section */
+
 .hero {
     background: url('hero.jpg') center center/cover no-repeat;
     color: #fdfaf6;
@@ -87,8 +87,8 @@ header nav ul li a {
     border-radius: 5px;
 }
 
-/* Categorías */
-.categories {
+
+.categorias {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,7 +110,7 @@ header nav ul li a {
     border: 1px solid #ddd;
 }
 
-/* Featured Products */
+
 .featured-products {
     text-align: center;
     padding: 30px;
@@ -154,7 +154,7 @@ header nav ul li a {
     right: 10px;
 }
 
-/* Footer */
+
 footer {
     background-color: #4a4e69;
     color: #f0e9e2;
@@ -173,7 +173,7 @@ footer {
     width: 24px;
     height: 24px;
 }
-/* Estilos para el Footer */
+
 footer {
     background-color: #4a4e69;
     color: #f0e9e2;
@@ -203,7 +203,7 @@ footer {
     color: #b3c5cc;
 }
 
-/* Estilo para los Íconos de Redes Sociales */
+
 .sociales {
     display: flex;
     justify-content: center;

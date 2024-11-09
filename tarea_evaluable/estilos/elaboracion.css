@@ -1,11 +1,11 @@
-/* Estilos generales */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     color: #333;
 }
 
-/* Estilo de la barra de navegación */
+
 header {
     display: flex;
     justify-content: center;
@@ -25,7 +25,7 @@ header nav a:hover {
     color: #b3c5cc;
 }
 
-/* Hero Section */
+
 .hero-elaboracion {
     background: url('https://via.placeholder.com/1200x400?text=Elaboracion') center center/cover no-repeat;
     color: #f0e9e2;
@@ -38,7 +38,7 @@ header nav a:hover {
     margin-bottom: 10px;
 }
 
-/* Proceso de Elaboración */
+
 .process {
     padding: 40px 20px;
     text-align: center;
@@ -82,7 +82,7 @@ header nav a:hover {
     color: #666;
 }
 
-/* Historia de la Empresa */
+
 .history {
     padding: 40px 20px;
     background-color: #e7e0d4;
@@ -102,7 +102,7 @@ header nav a:hover {
     line-height: 1.6;
 }
 
-/* Footer */
+
 footer {
     background-color: #4a4e69;
     color: #f0e9e2;
